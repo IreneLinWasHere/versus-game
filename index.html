@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Game</title>
+</head>
+<body>
+    <!--Intro and controls page-->
+    <div id="intro-container">
+        <h1>Versus</h1>
+        <p>You have one minute to defeat your opponent. Good luck!</p>
+
+        <h2>Controls</h2>
+
+        <div class="player-container">
+            <div class="player-controls-container">
+                <h3>Huntress</h3>
+                <ul class="player-controls">
+                    <li>W: Jump</li>
+                    <li>A: Left</li>
+                    <li>S: Attack</li>
+                    <li>D: Right</li>
+                </ul>
+            </div>
+
+            <div class="player-controls-container">
+                <h3>Kenji</h3>
+                <ul class="player-controls">
+                    <li>Up Arrow: Jump</li>
+                    <li>Left Arrow: Left</li>
+                    <li>Down Arrow: Attack</li>
+                    <li>Right Arrow: Right</li>
+                </ul>
+            </div>
+        </div>
+
+        <button id="ready-button">Ready!</button>
+    </div>
+
+    <!-- Game canvas -->
+    <div class="red-container">
+        <div class="smaller-red-container">
+            <!-- Player Health -->
+            <div class="health-container player-health">
+                <div class="health-bar"></div>
+                <div id="playerHealth" class="health-fill"></div>
+            </div>
+
+            <!-- Timer -->
+            <div id="timer" class="timer-container hidden">10</div>
+
+            <!-- Enemy Health -->
+            <div class="health-container enemy-health">
+                <div class="health-bar"></div>
+                <div id="enemyHealth" class="health-fill"></div>
+            </div>
+        </div>
+
+        <div id="result-container">
+            <div id="displayText" class="display-text">Tie</div>
+            <!-- Play again button -->
+            <button id="play-again-button">Play Again!</button>
+        </div>
+
+        <canvas id="game-canvas" class="hidden"></canvas>
+    </div>
+    
+    
+    <!-- JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#intro-container {
+    padding: 5%;
+    background-image: url("img/background.png");
+    text-align: center;
+}
+
+h1 {
+    color: #e4d231;
+}
+
+h1, p {
+    text-align: center; 
+}
+
+p {
+    color: #fbf9f9;
+    margin-bottom: 4rem;
+}
+
+.player-container {
+    display: flex;
+    width: 100%;
+}
+
+.player-container div {
+    width: 50%;
+}
+
+.player-controls {
+    list-style-type: none;
+}
+
+.red-container {
+    position: relative;
+    display: inline-block;
+}
+
+.smaller-red-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.health-container {
+    position: relative;
+    width: 100%;
+    border: 4px solid #fbf9f9;
+}
+
+.health-bar {
+    background-color: #d41818;
+    height: 30px;
+}
+
+.health-fill {
+    position: absolute;
+    background: #8b5a8e;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.timer-container {
+    background-color: #000000;
+    height: 50px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fbf9f9;
+    border: 4px solid #fbf9f9;
+}
+
+#result-container {
+    display: none;
+    position: absolute;
+    color: #fbf9f9;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+}
+
+#play-again-button {
+    margin-top: 1rem; 
+}
+
+.hidden {
+    display: none;
+}
